@@ -1,3 +1,7 @@
+html {
+  background-color: #e7ebee;
+}
+
 header {
   height: 100px;
   background-color: #1d262b;
@@ -37,4 +41,84 @@ header h1 {
   padding: 8px;
   border-radius: 100%;
   background: white;
+}
+
+.accounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.account-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  height: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.account-name {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  letter-spacing: 2px;
+}
+.euro {
+  color: lightgray;
+}
+
+.operation:nth-child(even) {
+  background: lightgray;
+}
+
+.operation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  margin-left: 25px;
+}
+
+.operation-date {
+  color: gray;
+  padding-left: 10px;
+  font-size: 15px;
+  width: 100px;
+}
+
+.operation-description {
+  color: gray;
+  flex: 1;
+  justify-content: flex-start;
+  font-size: 15px;
+}
+
+.operation-amount {
+  color: gray;
+  font-size: 15px;
+  padding-right: 10px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  background: lightgray;
+  border-radius: 4px;
 }
